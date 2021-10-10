@@ -9,5 +9,5 @@ This code snippets registers two external commands to WP_CLI which overrides wp-
 WP-CLI is fast and provides a command line interface, we are developing a hosting solution for WordPress users for which we need to update wp-config files and htaccess in the backend without user interaction. So I ended up using wp-cli. Plugin exposes these commands via cli and execute them on server as a response of an API call from our hosting platform.
 
 # Code structure
-WP-CLI supports registering any callable class, function, or closure as a command. It reads usage details from the callback’s PHPdoc. WP_CLI::add_command() (doc) is used for both internal and third-party command registration.
+WP-CLI supports registering any callable class, function, or closure as a command. It reads usage details from the callback’s. WP_CLI::add_command() (doc) is used for both internal and third-party command registration.
 But I prefer to use OOP becuase it resolves naming conflicts, code is easy to manage, enhances code readability and increases code reuseability.
